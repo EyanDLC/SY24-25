@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PixelPaint"
         mc:Ignorable="d"
         Title="MainWindow" Height="511" Width="802">
-    <Grid Margin="25,0,0,8">
+    <Grid x:Name="Grid1" Margin="25,0,0,8">
         <Grid.RowDefinitions>
             <RowDefinition Height="255*"/>
             <RowDefinition Height="179*"/>
@@ -123,7 +123,17 @@
         <Rectangle x:Name="P29" HorizontalAlignment="Left" Height="37" Margin="395,127,0,0" VerticalAlignment="Top" Width="43" Stroke="Black" Fill="White"/>
         <Rectangle x:Name="P19" HorizontalAlignment="Left" Height="38" Margin="395,89,0,0" VerticalAlignment="Top" Width="43" Stroke="Black" Fill="White"/>
         <Rectangle x:Name="P09" HorizontalAlignment="Left" Height="38" Margin="395,51,0,0" VerticalAlignment="Top" Width="43" Stroke="Black" Fill="White"/>
-        <Rectangle x:Name="Brush_one" HorizontalAlignment="Left" Height="74" Margin="492,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="77" Fill="Black" Grid.RowSpan="2"/>
+        <Rectangle x:Name="brush1" HorizontalAlignment="Left" Height="74" Margin="492,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="77" Fill="Black" Grid.RowSpan="2"/>
+        <Button Content="reset" HorizontalAlignment="Left" Margin="13,152,0,0" Grid.Row="1" VerticalAlignment="Top" Height="39" Width="62" Click="Button_Click"/>
+        <CheckBox x:Name="chkdrag" Content="Drag" HorizontalAlignment="Left" Margin="492,108,0,0" VerticalAlignment="Top" Height="30" Width="71"/>
+        <Button Content="Top" HorizontalAlignment="Left" Margin="118,152,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="66" Click="Button_Click_2"/>
+        <Button Content="bottom" HorizontalAlignment="Left" Margin="225,152,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="65" Click="Button_Click_3"/>
+        <Button Content="Left" HorizontalAlignment="Left" Margin="360,152,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="56" Click="Button_Click_4"/>
+        <Button Content="Right" HorizontalAlignment="Left" Margin="469,152,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="38" Click="Button_Click_5"/>
+        <Button Content="Column" HorizontalAlignment="Left" Margin="140,12,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="Button_Click_7"/>
+        <Button Content="Diagonal" HorizontalAlignment="Left" Margin="258,12,0,0" VerticalAlignment="Top" Height="37" Width="61" Click="Button_Click_8"/>
+        <Button Content="Lower Right" HorizontalAlignment="Left" Margin="395,12,0,0" VerticalAlignment="Top" Height="37" Width="56" Click="Button_Click_1"/>
+        <Button Content="Rows" Margin="2,12,629,237" Click="Button_Click_6"/>
 
     </Grid>
 </Window>
